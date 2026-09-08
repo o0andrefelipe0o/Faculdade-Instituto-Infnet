@@ -1,0 +1,14 @@
+C:\Users\andre\OneDrive\Desktop\Teste de Performance - TP2\Teste de Performance - TP2\bin\Debug\net10.0\Teste de Performance - TP2.exe
+C:\Users\andre\OneDrive\Desktop\Teste de Performance - TP2\Teste de Performance - TP2\bin\Debug\net10.0\Teste de Performance - TP2.deps.json
+C:\Users\andre\OneDrive\Desktop\Teste de Performance - TP2\Teste de Performance - TP2\bin\Debug\net10.0\Teste de Performance - TP2.runtimeconfig.json
+C:\Users\andre\OneDrive\Desktop\Teste de Performance - TP2\Teste de Performance - TP2\bin\Debug\net10.0\Teste de Performance - TP2.dll
+C:\Users\andre\OneDrive\Desktop\Teste de Performance - TP2\Teste de Performance - TP2\bin\Debug\net10.0\Teste de Performance - TP2.pdb
+C:\Users\andre\OneDrive\Desktop\Teste de Performance - TP2\Teste de Performance - TP2\obj\Debug\net10.0\Teste de Performance - TP2.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\andre\OneDrive\Desktop\Teste de Performance - TP2\Teste de Performance - TP2\obj\Debug\net10.0\Teste de Performance - TP2.AssemblyInfoInputs.cache
+C:\Users\andre\OneDrive\Desktop\Teste de Performance - TP2\Teste de Performance - TP2\obj\Debug\net10.0\Teste de Performance - TP2.AssemblyInfo.cs
+C:\Users\andre\OneDrive\Desktop\Teste de Performance - TP2\Teste de Performance - TP2\obj\Debug\net10.0\Teste de Performance - TP2.csproj.CoreCompileInputs.cache
+C:\Users\andre\OneDrive\Desktop\Teste de Performance - TP2\Teste de Performance - TP2\obj\Debug\net10.0\Teste de Performance - TP2.dll
+C:\Users\andre\OneDrive\Desktop\Teste de Performance - TP2\Teste de Performance - TP2\obj\Debug\net10.0\refint\Teste de Performance - TP2.dll
+C:\Users\andre\OneDrive\Desktop\Teste de Performance - TP2\Teste de Performance - TP2\obj\Debug\net10.0\Teste de Performance - TP2.pdb
+C:\Users\andre\OneDrive\Desktop\Teste de Performance - TP2\Teste de Performance - TP2\obj\Debug\net10.0\Teste de Performance - TP2.genruntimeconfig.cache
+C:\Users\andre\OneDrive\Desktop\Teste de Performance - TP2\Teste de Performance - TP2\obj\Debug\net10.0\ref\Teste de Performance - TP2.dll
