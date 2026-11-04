@@ -1,0 +1,25 @@
+﻿@page
+@model AddEventModel
+
+<h1>Cadastrar Evento</h1>
+
+<form method="post">
+
+    <div>
+        <label>Título:</label>
+        <input asp-for="NovoEvento.Titulo" />
+    </div>
+
+    <div>
+        <label>Data:</label>
+        <input asp-for="NovoEvento.Data" type="date" />
+    </div>
+
+    <div>
+        <label>Local:</label>
+        <input asp-for="NovoEvento.Local" />
+    </div>
+
+    <button type="submit">Cadastrar</button>
+
+</form>

@@ -1,0 +1,31 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Produtos";
+}
+
+<h1>Catálogo de Produtos</h1>
+
+<p>Confira os produtos disponíveis em nossa loja.</p>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Nome</th>
+            <th>Preço</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        @foreach (var produto in Model.Produtos)
+        {
+            <tr>
+                <td>@produto.Nome</td>
+                <td>
+                    @produto.Preco.ToString("C",
+                        System.Globalization.CultureInfo.GetCultureInfo("pt-BR"))
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
