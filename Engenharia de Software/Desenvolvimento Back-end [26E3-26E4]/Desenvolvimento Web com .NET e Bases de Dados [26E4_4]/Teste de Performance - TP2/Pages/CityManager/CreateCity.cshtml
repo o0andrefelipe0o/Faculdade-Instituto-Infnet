@@ -1,0 +1,36 @@
+﻿@page
+@model Teste_de_Performance___TP2.Pages.CityManager.CreateCityModel
+
+@{
+    ViewData["Title"] = "Cadastro de Cidade";
+}
+
+<h1>Cadastro de Cidades</h1>
+
+<form method="post">
+    <div class="mb-3">
+        <label asp-for="Input.CityName" class="form-label">
+            Nome da cidade:
+        </label>
+
+        <input asp-for="Input.CityName" class="form-control" />
+
+        <span asp-validation-for="Input.CityName" class="text-danger"></span>
+    </div>
+
+    <button type="submit" class="btn btn-primary">
+        Cadastrar
+    </button>
+</form>
+
+@if (ViewData.ModelState.IsValid &&
+     !string.IsNullOrWhiteSpace(Model.Input.CityName))
+{
+    <p class="mt-3">
+        Cidade cadastrada: <strong>@Model.Input.CityName</strong>
+    </p>
+}
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

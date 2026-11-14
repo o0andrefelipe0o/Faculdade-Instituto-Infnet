@@ -1,0 +1,61 @@
+﻿@page
+@model Teste_de_Performance___TP2.Pages.CityManager.CreateCountryModel
+
+@{
+    ViewData["Title"] = "Cadastro de Países";
+}
+
+<h1>Cadastro de Países</h1>
+
+<form method="post">
+
+    @for (int i = 0; i < Model.Countries.Count; i++)
+    {
+        <div class="mb-4">
+            <h5>País @(i + 1)</h5>
+
+            <div class="mb-3">
+                <label asp-for="Countries[i].CountryName" class="form-label">
+                    Nome do país:
+                </label>
+
+                <input asp-for="Countries[i].CountryName" class="form-control" />
+
+                <span asp-validation-for="Countries[i].CountryName" class="text-danger"></span>
+            </div>
+
+            <div class="mb-3">
+                <label asp-for="Countries[i].CountryCode" class="form-label">
+                    Código do país:
+                </label>
+
+                <input asp-for="Countries[i].CountryCode" class="form-control" />
+
+                <span asp-validation-for="Countries[i].CountryCode" class="text-danger"></span>
+            </div>
+        </div>
+    }
+
+    <button type="submit" class="btn btn-primary">
+        Cadastrar países
+    </button>
+
+</form>
+
+@if (Model.CreatedCountries.Count > 0)
+{
+    <h2 class="mt-4">Países cadastrados</h2>
+
+    @for (int i = 0; i < Model.CreatedCountries.Count; i++)
+    {
+        var country = Model.CreatedCountries[i];
+        <p>
+            País @(i + 1): <strong>@country.CountryName</strong><br />
+            Código: <strong>@country.CountryCode</strong>
+        </p>
+    }
+}
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}
