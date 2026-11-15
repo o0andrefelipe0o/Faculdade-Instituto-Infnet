@@ -1,0 +1,44 @@
+﻿@page
+@model Teste_de_Performance___TP2.Pages.CityManager.CitiesListModel
+
+@{
+    ViewData["Title"] = "Lista de Cidades";
+}
+
+<h1>Lista de Cidades</h1>
+
+@if (Model.Cities.Count == 0)
+{
+    <p>Nenhuma cidade cadastrada. A lista está vazia.</p>
+
+    <a asp-page="/CityManager/CreateCity" class="btn btn-primary">
+        Cadastrar cidade
+    </a>
+}
+else
+{
+    <ul class="list-group">
+        @foreach (var city in Model.Cities)
+        {
+            <li class="list-group-item d-flex justify-content-between align-items-center">
+
+                <a asp-page="/CityManager/CityDetails"
+                   asp-route-cityName="@city">
+                    @city
+                </a>
+
+                <form method="post" asp-page-handler="Delete">
+                    <input type="hidden" name="cityName" value="@city" />
+
+                    <button type="submit"
+                            class="btn btn-outline-danger btn-sm"
+                            title="Excluir cidade"
+                            aria-label="Excluir @city">
+                        &times;
+                    </button>
+                </form>
+
+            </li>
+        }
+    </ul>
+}

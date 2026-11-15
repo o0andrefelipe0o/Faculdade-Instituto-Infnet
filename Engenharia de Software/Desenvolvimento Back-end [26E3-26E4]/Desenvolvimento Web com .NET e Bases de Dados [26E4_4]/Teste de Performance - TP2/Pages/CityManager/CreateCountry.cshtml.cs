@@ -22,6 +22,23 @@ namespace Teste_de_Performance___TP2.Pages.CityManager
 
         public void OnPost()
         {
+            for (int i = 0; i < Countries.Count; i++)
+            {
+                string countryName = Countries[i].CountryName.Trim();
+                string countryCode = Countries[i].CountryCode.Trim();
+
+                if (!string.IsNullOrWhiteSpace(countryName) &&
+                    !string.IsNullOrWhiteSpace(countryCode) &&
+                    char.ToUpperInvariant(countryName[0]) !=
+                    char.ToUpperInvariant(countryCode[0]))
+                {
+                    ModelState.AddModelError(
+                        $"Countries[{i}].CountryCode",
+                        "O código deve começar com a mesma letra do nome do país."
+                    );
+                }
+            }
+
             if (!ModelState.IsValid)
             {
                 return;

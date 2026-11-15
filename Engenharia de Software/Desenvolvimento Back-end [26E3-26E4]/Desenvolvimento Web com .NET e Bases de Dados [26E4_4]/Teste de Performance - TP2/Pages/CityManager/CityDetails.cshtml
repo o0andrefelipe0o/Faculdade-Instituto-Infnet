@@ -7,6 +7,15 @@
 
 <h1>Detalhes da Cidade</h1>
 
-<p>
-    Você está vendo detalhes de: <strong>@Model.CityName</strong>
-</p>
+@if (Model.CityNotFound)
+{
+    <div class="mt-3">
+        Cidade não encontrada.
+    </div>
+}
+else
+{
+    <p>
+        Você está vendo detalhes de: <strong>@Model.CityName</strong>
+    </p>
+}

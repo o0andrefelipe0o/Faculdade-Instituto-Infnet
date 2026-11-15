@@ -15,4 +15,12 @@
     <Content Remove="Pages\CityManager\Index.cshtml" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Content Include="Pages\CityManager\SaveNote.cshtml.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="wwwroot\files\" />
+  </ItemGroup>
+
 </Project>

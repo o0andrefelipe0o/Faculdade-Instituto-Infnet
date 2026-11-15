@@ -1,0 +1,52 @@
+﻿@page
+@model Teste_de_Performance___TP2.Pages.CityManager.SaveNoteModel
+
+@{
+    ViewData["Title"] = "Salvar Nota";
+}
+
+<h1>Salvar Nota</h1>
+
+<form method="post">
+
+    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+    <div class="mb-3">
+        <label asp-for="Input.Content" class="form-label">
+            Conteúdo da nota:
+        </label>
+
+        <textarea asp-for="Input.Content"
+                  class="form-control"
+                  rows="8"></textarea>
+
+        <span asp-validation-for="Input.Content"
+              class="text-danger"></span>
+    </div>
+
+    <button type="submit" class="btn btn-primary">
+        Salvar nota
+    </button>
+
+</form>
+
+@if (Model.SavedFileName != null)
+{
+    <div class="mt-3">
+        Nota salva com sucesso!
+
+        <p class="mb-0">
+            Arquivo: <strong>@Model.SavedFileName</strong>
+        </p>
+        <br />
+        <a asp-page-handler="Download"
+           asp-route-fileName="@Model.SavedFileName"
+           class="btn btn-outline-primary">
+            Baixar nota
+        </a>
+    </div>
+}
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}
