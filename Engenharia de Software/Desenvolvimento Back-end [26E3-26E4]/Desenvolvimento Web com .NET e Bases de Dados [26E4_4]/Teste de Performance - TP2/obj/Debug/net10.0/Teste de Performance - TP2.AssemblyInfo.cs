@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Teste de Performance - TP2")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b97327d141dd3ed6d8b90458f45c341fed7e1131")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+19c349f4f2c7aa95fc89c4afd99d7eb46e1ce260")]
 [assembly: System.Reflection.AssemblyProductAttribute("Teste de Performance - TP2")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Teste de Performance - TP2")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
